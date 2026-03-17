@@ -11,8 +11,10 @@ function enviar() {
 
   if (nome && email) {
     document.getElementById('msg').innerText = "Mensagem enviada com sucesso!";
+    document.getElementById('msg').style.color = "green";
   } else {
     document.getElementById('msg').innerText = "Preencha todos os campos.";
+    document.getElementById('msg').style.color = "red";
   }
 }
 
