@@ -23,6 +23,13 @@ header h1 {
   font-size: 28px;
 }
 
+header button {
+  margin-top: 15px;
+  background: white;
+  color: var(--azul);
+  font-weight: bold;
+}
+
 nav {
   display: flex;
   justify-content: center;
