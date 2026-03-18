@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colégio Estadual São Cristóvão</title>
+  <title>Colégio Estadual São Cristóvão E.F.M.P</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Colégio Estadual São Cristóvão</h1>
+  <h1>Colégio Estadual São Cristóvão E.F.M.P</h1>
   <p>Formando cidadãos para o futuro com educação de qualidade</p>
   <br>
-  <p><strong>📍 Endereço:</strong> Rua Exemplo, 123</p>
-  <p><strong>📞 Telefone:</strong> (41) 99999-9999</p>
+  <button onclick="mostrar('matricula')">Fazer Matrícula</button>
 </header>
 
 <nav>
@@ -61,8 +60,17 @@
   <ul id="lista"></ul>
 </section>
 
+<section id="matricula">
+  <h2>Matrícula Online</h2>
+  <input type="text" id="nomeMatricula" placeholder="Nome do aluno">
+  <input type="text" id="serie" placeholder="Série">
+  <input type="text" id="responsavel" placeholder="Responsável">
+  <button onclick="matricular()">Enviar Matrícula</button>
+  <p id="msgMatricula"></p>
+</section>
+
 <footer>
-  <p>© 2026 Colégio Estadual São Cristóvão</p>
+  <p>© 2026 Colégio Estadual São Cristóvão E.F.M.P</p>
 </footer>
 
 <script src="script.js"></script>
