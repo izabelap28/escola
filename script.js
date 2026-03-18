@@ -25,7 +25,6 @@ function addAluno() {
     let li = document.createElement('li');
     li.textContent = nome;
 
-    // botão remover
     let btn = document.createElement('button');
     btn.textContent = "Remover";
     btn.style.marginLeft = "10px";
@@ -38,5 +37,19 @@ function addAluno() {
     document.getElementById('lista').appendChild(li);
 
     document.getElementById('novoAluno').value = "";
+  }
+}
+
+function matricular() {
+  let nome = document.getElementById('nomeMatricula').value;
+  let serie = document.getElementById('serie').value;
+  let responsavel = document.getElementById('responsavel').value;
+
+  if (nome && serie && responsavel) {
+    document.getElementById('msgMatricula').innerText = "Matrícula enviada com sucesso!";
+    document.getElementById('msgMatricula').style.color = "green";
+  } else {
+    document.getElementById('msgMatricula').innerText = "Preencha todos os campos.";
+    document.getElementById('msgMatricula').style.color = "red";
   }
 }
